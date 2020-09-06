@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>wishes</title>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<script>
+            function showImage()
+            {
+                document.getElementById('fade-in').style.visibility='visible';
+            }
+            setTimeout('showImage()',10000);
+        </script>-->
+    </head>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            background: black;
+        }
+        .fade-in {
+            /* The image used */
+            background-image: url("ry3.png");
+
+            /* Full height */
+            height: 100%; 
+            width: 100%;
+
+            /* Center and scale the image nicely */
+            background-position: center center;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+        .fade-in{
+            animation: fadeIn 40s;
+        }
+        @keyframes fadeIn {
+            from{
+                opacity: 0;
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        .fade-out{
+            color: rgb(255, 217, 217);
+            animation: type 7s steps(16);
+            overflow:hidden;
+            white-space:nowrap;
+            font-family:consolas;
+            border-right:4px solid white;
+            width:16ch;
+            position: absolute;
+            top: 50%;
+        }
+        @keyframes type{
+            0%{
+                width:0ch;  
+            }
+            100%{
+                width:16ch;
+            }
+        }
+        @media only screen and (max-width: 760px) {
+            .fade-in{
+                width: 100%;
+                height: 90%; 
+                /* Center and scale the image nicely */
+                background-position: center center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+    <body>
+        <div style="display: flex;justify-content: center;align-items: center;">
+            <h2 class="fade-out" style="margin: 0; font-family: 'Dancing Script', cursive;font-size: 30px;">Happy Birthday Yassasvini.</h2>
+        </div>
+        <div class="fade-in"></div>
+    </body>
+</html>
